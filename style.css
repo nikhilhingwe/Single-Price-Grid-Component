@@ -111,7 +111,8 @@ li{
 .monthly-sub button{
     margin-top: 30px;
     margin-bottom: 40px;
-    padding: 13px 100px;
+    width: 85%;
+    height: 45px;
     outline: none;
     border: none;
     background: var(--BrightYellow);
