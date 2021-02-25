@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray); 
+}
+
+li{
+    list-style: none;
+}
+
+:root{    
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    }
+
+
+/* =========================================================== */
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+/* ====================== GRID-SECTION ====================== */
+
+.grid-sec{
+    margin: 15px 30px;
+    box-shadow: 5px 5px 15px rgb(182, 179, 179);
+    border-radius: 7px;
+}
+
+
+.grid-2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+/* ====================== COMMUNITY-SECTION ====================== */
+
+.community{
+    background: #fff;
+    padding: 40px ;
+    border-radius: 7px 7px 0px 0px ;
+}
+
+.community h1{
+    color: var(--Cyan);
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.community h2{
+    font-size: 18px;
+    color: var(--BrightYellow);
+    padding-bottom: 10px;
+}
+
+.community p{
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+    padding-right: 30px;
+}
+
+
+/* ====================== MONTHLY-SUBSCRIPTION-SECTION ====================== */
+
+.monthly-sub{
+    background: #2bb3b1;
+    padding-left: 40px;
+    color: var(--LightGray);
+    border-radius: 0px 0px 0px 7px ;
+}
+
+.monthly-sub h2{
+    font-size: 20px;
+    padding-top: 35px;
+}
+.pricing{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.pricing{
+    display: flex;
+}
+
+.pricing h4{
+    font-size: 16px;
+    margin-top: 14px;
+    margin-left: 12px;
+    font-weight: 400;
+    color: rgb(233, 229, 229);
+}
+
+.monthly-sub p{
+    padding-top: 10px;
+}
+
+.monthly-sub button{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 13px 100px;
+    outline: none;
+    border: none;
+    background: var(--BrightYellow);
+    color: var(--LightGray);
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(131, 129, 129);
+    font-family: 'Karla', sans-serif;
+}
+
+
+
+/* ====================== WHY-US-SECTION ====================== */
+
+.why-us{
+    background: #4abebd;
+    padding-left: 40px;
+    color: var(--LightGray);
+    border-radius: 0px 0px 7px 0px ;
+   
+}
+.why-us h2{
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.why-us ul{
+    padding-top: 20px;
+}
+
+.why-us li{
+    padding-top: 5px;
+    font-size: 14px;
+    color: rgb(233, 229, 229);
+    padding-right: 30px;
+}
+
+
+
+/* ====================== MEDIA QUERIES ====================== */
+
+
+@media  screen and (max-width:655px) {
+
+ 
+
+    .grid-2{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .monthly-sub{
+        border-radius: 0px;
+    }
+
+    .why-us{
+        padding-bottom: 25px;
+        border-radius: 0px 0px 7px 7px;
+    }
+}
+
+
+
